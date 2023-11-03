@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  rancher-do-cluster-template:
+  - annotations:
+      catalog.cattle.io/namespace: fleet-default
+      catalog.cattle.io/type: cluster-template
+    apiVersion: v1
+    created: "2023-11-03T17:06:08.085599858Z"
+    description: RKE2 Cluster template for DO
+    digest: 4a3fbb711a6f39378f3c163bec25e01be9f7788efc8149d85ceba6b519fe57dd
+    name: rancher-do-cluster-template
+    urls:
+    - https://github.com/ppzhukov/rancher-cluster-templates/releases/download/rancher-do-cluster-template-0.0.1/rancher-do-cluster-template-0.0.1.tgz
+    version: 0.0.1
+generated: "2023-11-03T17:06:08.085609305Z"
