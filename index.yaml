@@ -86,6 +86,17 @@ entries:
       catalog.cattle.io/namespace: fleet-default
       catalog.cattle.io/type: cluster-template
     apiVersion: v1
+    created: "2023-11-03T16:35:53.517708374Z"
+    description: RKE2 Cluster template for DO
+    digest: a63672b56a3ca725c20ff15883567906bdca4dd1c785546096273547671010a7
+    name: rancher-do-cluster-template
+    urls:
+    - https://github.com/ppzhukov/rancher-cluster-templates/releases/download/rancher-do-cluster-template-0.0.2/rancher-do-cluster-template-0.0.2.tgz
+    version: 0.0.2
+  - annotations:
+      catalog.cattle.io/namespace: fleet-default
+      catalog.cattle.io/type: cluster-template
+    apiVersion: v1
     created: "2023-11-03T16:28:47.17969399Z"
     description: RKE2 Cluster template for DO
     digest: 64245b4bd46de299d1819eea1b906289aa264356dc577873ea0d8e81c7f5221e
@@ -226,4 +237,4 @@ entries:
     urls:
     - https://github.com/bashofmann/rancher-equinix-cluster-template/releases/download/rancher-equinix-cluster-template-0.0.2/rancher-equinix-cluster-template-0.0.2.tgz
     version: 0.0.2
-generated: "2023-11-03T16:28:47.18001331Z"
+generated: "2023-11-03T16:35:53.517781781Z"
