@@ -1,6 +1,6 @@
 # rancher-cluster-templates
 
-Rancher Cluster Templates to provision RKE2 Kubernetes clusters
+Rancher Cluster Templates to provision RKE2 Kubernetes clusters.
 
 ## How to Use
 
