@@ -5,4 +5,4 @@ cloudCredentialSecretName: ""
 
 nodepool:
   mastercount: 1
-  workercount: 1
+  workercount: 2
