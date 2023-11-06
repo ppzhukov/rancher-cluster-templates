@@ -1,0 +1,80 @@
+apiVersion: rke-machine-config.cattle.io/v1
+kind: VmwarevsphereConfig
+metadata:
+  name: {{ .Values.cluster.name }}-worker
+  namespace: fleet-default
+boot2dockerUrl: ''
+cfgparam:
+  - disk.enableUUID=TRUE
+cloneFrom: /DC01_Local/vm/PZhukov/rancher/rancher-SLES15SP4-minimal-template
+cloudConfig: |+
+  #cloud-config
+  write_files:
+    - path: /tmp/network-setup.sh
+      content: |
+          systemctl enable wicked --now
+    - path: /etc/pki/trust/anchors/rancher-stend-registry.pem
+      content: |
+          -----BEGIN CERTIFICATE-----
+          MIIEZzCCAs+gAwIBAgIBDTANBgkqhkiG9w0BAQsFADBPMQswCQYDVQQGEwJSVTER
+          MA8GA1UEChMIU1VTRSBDSVMxFDASBgNVBAsTC1NVU0UgQ0lTIElUMRcwFQYDVQQD
+          Ew5TVVNFIHN0ZW5kcyBDQTAeFw0yMzExMDYxODE5NDBaFw0zMzExMDMxODE5NDBa
+          ME8xCzAJBgNVBAYTAlJVMREwDwYDVQQKEwhTVVNFIENJUzEUMBIGA1UECxMLU1VT
+          RSBDSVMgSVQxFzAVBgNVBAMTDlNVU0Ugc3RlbmRzIENBMIIBojANBgkqhkiG9w0B
+          AQEFAAOCAY8AMIIBigKCAYEAr6VS0O8TqnJPNCFEGVDP+LH4LWn22eWoHWlzSF2D
+          8q4FZj9Ff1mQ1RITI6YPYSkAp406Tgxxd1slFuJL3JQrd3AHSLGB3YjrCGNXMCeI
+          M58PBovNHYmnFmiJLOciMwyJoMP3pp6tX31jhCrfNvOcnWFQMHAUGrBglPuMgICL
+          BV1XY54DDOpqnqaHSKlJ2QqEsVU8bxYINQFp7T777Gwsxk2WWszH9dariGT+SF1z
+          ZDethkMuPkOayeRA85xDNFCZ+yT2ZgEm46ZlwxBrU/QP88yItf1FKGy0OVj8v3fD
+          UasFK1KfimlIPtCw2eUP3GSCQ3B4EUABq1E+VsQOZrWwmnuTnE+9hcBeHA1hlQyQ
+          4wBzG3DJtM2Q12oHVHvzuOaFrgLlfXvlO8cD8DOVNBiz0pfLg1YybuITtbIlOVup
+          r3Mv+cz78PwuTXqD9RG/lebdiEK6RTuSOH2uYcRECPY2OEh1LsFxdrK7++cMOfd2
+          jHMSk5KxPiAdXE7a6o7CHta3AgMBAAGjTjBMMA8GA1UdEwEB/wQFMAMBAf8wGgYD
+          VR0RBBMwEYEPcHpodWtvdkBzdXNlLnJ1MB0GA1UdDgQWBBRiNAf0ue9J7TD4sivo
+          SR2saXi1QjANBgkqhkiG9w0BAQsFAAOCAYEAiGGpZurPCDipN3mOP9LOOdAGk2f7
+          TJf5TSxZ3YUqe7JUVDEN01jsLSj2I/Jo5vIs5oUn2+MnKKtCYdS8x7STpig4Ure7
+          EoJs0NJUPlTJmUKdmN3qcWw0pRAvt4ofcuRHFBMjhqMKLM46y+3O6vsJSFolnnOH
+          1lfVciUJ1xzG+8Y7Ik9NKeMUL/PHLr/z+kBXnV5T2uA42UlaUj9++70r+ctqJYmN
+          2+7mNg43EhbZpHsXO25GxIZWruQ2uNfDW7iaxmmeJc2ZFe2EB21svrb+lyXZwiEs
+          QLn7lEQs7Z3u1DzGlLGRaPotGdGXfE0weViF4me3zC9AMwj5niejkC4JPtEAeE5B
+          ALnM4sMPtwJpqH8SIjUaCGJgBq8bGzMPfLXFGyE26WXAkdiLkANRFi706o5CJ6qh
+          uqAzOHXKWDQJpfO0ulVd9uB0ZjUiKm+KPKdftlQw43C+plem8rSQME5cteUeemCM
+          mjCK44mSDGwXN+q38QxXkJtkYnj9bakCSx60
+          -----END CERTIFICATE-----
+          EOF
+  runcmd:
+    - /usr/sbin/update-ca-certificates && /usr/bin/c_rehash
+    - bash /tmp/network-setup.sh
+    - rm /tmp/network-setup.sh
+cloudinit: ''
+common:
+  labels: null
+  taints: []
+contentLibrary: ''
+cpuCount: '4'
+creationType: template
+customAttribute: []
+datacenter: /DC01_Local
+datastore: /DC01_Local/datastore/Storages/vhost01/vhost01_Datastore_02
+datastoreCluster: ''
+diskSize: '30000'
+folder: /DC01_Local/vm/PZhukov/rancher
+hostsystem: /DC01_Local/host/Cluster/172.29.192.21
+memorySize: '8196'
+network:
+  - /DC01_Local/network/DPG_Zhukov_TF_LAB_VLAN1301
+os: linux
+password: ''
+pool: /DC01_Local/host/Cluster/Resources
+sshPassword: tcuser
+sshPort: '22'
+sshUser: docker
+sshUserGroup: staff
+tag: []
+username: ''
+vappIpallocationpolicy: null
+vappIpprotocol: null
+vappProperty: []
+vappTransport: null
+vcenter: ''
+vcenterPort: '443'
