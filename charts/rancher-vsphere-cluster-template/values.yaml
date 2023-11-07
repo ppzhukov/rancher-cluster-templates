@@ -4,5 +4,5 @@ cluster:
 cloudCredentialSecretName: ""
 
 nodepool:
-  mastercount: 1
-  workercount: 2
+  - mastercount: 1
+  - workercount: 2
