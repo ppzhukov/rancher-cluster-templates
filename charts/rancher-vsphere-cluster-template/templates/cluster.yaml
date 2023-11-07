@@ -12,7 +12,6 @@ spec:
     machinePools:
     - controlPlaneRole: true
       etcdRole: true
-
       machineConfigRef:
         kind: VmwarevsphereConfig
         name: {{ .Values.cluster.name }}-master
