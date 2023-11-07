@@ -14,11 +14,11 @@ questions:
   description: "Specify master node count"
   type: int
   required: true
-  label: "Node count"
+  label: "Master Node count"
   group: "Nodepools"
 - variable: .Values.nodepool.workercount
   description: "Specify worker node count"
   type: int
   required: true
-  label: "Node count"
+  label: "Worker Node count"
   group: "Nodepools"
