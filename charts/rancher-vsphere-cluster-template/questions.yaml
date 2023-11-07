@@ -10,13 +10,13 @@ questions:
   label: "CloudCredential Name"
   type: cloudcredential
   group: "General"
-- variable: .Values.nodepool.mastercount
+- variable: nodepool.mastercount
   description: "Specify master node count"
   type: int
   required: true
   label: "Master Node count"
   group: "Nodepools"
-- variable: .Values.nodepool.workercount
+- variable: nodepool.workercount
   description: "Specify worker node count"
   type: int
   required: true
