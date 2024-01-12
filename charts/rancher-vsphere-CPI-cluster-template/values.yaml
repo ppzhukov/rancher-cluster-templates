@@ -1,0 +1,11 @@
+cluster:
+  name: rke2-template-demo
+
+cloudCredentialSecretName: ""
+
+nodepool:
+  mastercount: 1
+  workercount: 2
+registry:
+  privateRegistrySecret: ""
+  privateRegistryURL: "192.168.14.1.sslip.io:8443"

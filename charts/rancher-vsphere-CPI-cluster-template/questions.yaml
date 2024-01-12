@@ -1,0 +1,35 @@
+questions:
+- variable: cluster.name
+  description: "Specify the name of the cluster"
+  label: "Cluster Name"
+  required: true
+  type: string
+  group: "General"
+- variable: cloudCredentialSecretName
+  description: "CloudCredentialName for provisioning cluster"
+  label: "CloudCredential Name"
+  type: cloudcredential
+  group: "General"
+- variable: nodepool.mastercount
+  description: "Specify master node count"
+  type: int
+  required: true
+  label: "Master Node count"
+  group: "Nodepools"
+- variable: nodepool.workercount
+  description: "Specify worker node count"
+  type: int
+  required: true
+  label: "Worker Node count"
+  group: "Nodepools"
+- variable: registry.privateRegistrySecret
+  description: "privateRegistrySecret for provisioning cluster"
+  label: "privateRegistrySecret Name"
+  type: enum
+  required: false
+  options:
+  - registryconfig-auth-rt5n2
+  - registryconfig-auth-nope1
+  - registryconfig-auth-nope2
+  group: "General"
+
