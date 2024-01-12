@@ -1,7 +1,7 @@
 apiVersion: v1
 name: rancher-vsphere-cluster-template
 description: RKE2 Cluster template for vSphere
-version: 0.0.8
+version: 0.1.0
 annotations:
   catalog.cattle.io/type: cluster-template
   catalog.cattle.io/namespace: fleet-default
