@@ -8,10 +8,15 @@ spec:
   cloudCredentialSecretName: {{ .Values.cloudCredentialSecretName }}
   {{- end }}
   kubernetesVersion: v1.24.17+rke2r1
-  clusterSecrets:
-    privateRegistrySecret: {{ .Values.registry.privateRegistrySecret }}
-    privateRegistryURL: {{ .Values.registry.privateRegistryURL }}
   rkeConfig:
+    registries:
+      configs:
+        {{ .Values.registry.privateRegistryURL }}:
+          authConfigSecretName: {{ .Values.registry.privateRegistrySecret }}
+          caBundle: null
+          insecureSkipVerify: false
+          tlsSecretName: null
+      mirrors: {}
     machinePools:
     - controlPlaneRole: true
       etcdRole: true
