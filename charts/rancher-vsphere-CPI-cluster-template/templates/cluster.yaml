@@ -10,28 +10,35 @@ spec:
   kubernetesVersion: v1.24.17+rke2r1
   rkeConfig:
     chartValues:
+      rke2-calico: {}
       rancher-vsphere-cpi:
         vCenter:
           credentialsSecret:
-            generate: false
-            name: {{ .Values.cloudCredentialSecretName }}
+            name: ''
           datacenters: DC01_Local
+          host: 172.29.192.20
+          password: vCenter.password
+          username: vCenter.user
       rancher-vsphere-csi:
         storageClass:
           datastoreURL: ds:///vmfs/volumes/5cbaab2e-f0847b38-f712-0cc47adc3c62/
         vCenter:
-          configSecret:
-            generate: false
-            name: {{ .Values.cloudCredentialSecretName }}
           datacenters: DC01_Local
+          host: 172.29.192.20
+          password: vCenter.password
+          username: vCenter.user
+    machineSelectorConfig:
+      - config:
+          cloud-provider-name: rancher-vsphere
+          protect-kernel-defaults: false
+          system-default-registry: {{ .Values.registry.privateRegistryURL }}
     registries:
       configs:
         {{ .Values.registry.privateRegistryURL }}:
           authConfigSecretName: {{ .Values.registry.privateRegistrySecret }}
-          caBundle: null
           insecureSkipVerify: false
-          tlsSecretName: null
-      mirrors: {}
+      mirrors:
+        {}
     machinePools:
     - controlPlaneRole: true
       etcdRole: true

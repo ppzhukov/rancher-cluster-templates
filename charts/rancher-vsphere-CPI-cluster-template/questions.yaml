@@ -32,4 +32,15 @@ questions:
   - registryconfig-auth-nope1
   - registryconfig-auth-nope2
   group: "General"
-
+- variable: vCenter.username
+  label: Username
+  description: Username for vCenter
+  type: string
+  required: true
+  group: Configuration
+- variable: vCenter.password
+  label: Password
+  description: Password for vCenter
+  type: password
+  required: true
+  group: Configuration
