@@ -9,8 +9,8 @@ spec:
   {{- end }}
   kubernetesVersion: v1.24.17+rke2r1
   clusterSecrets:
-    privateRegistrySecret: {{ .Values.privateRegistrySecret }}
-    privateRegistryURL: {{ .Values.privateRegistryURL }}
+    privateRegistrySecret: {{ .Values.registry.privateRegistrySecret }}
+    privateRegistryURL: {{ .Values.registry.privateRegistryURL }}
   rkeConfig:
     machinePools:
     - controlPlaneRole: true
