@@ -59,7 +59,7 @@ datastore: /DC01_Local/datastore/Storages/vhost01/vhost01_Datastore_02
 datastoreCluster: ''
 diskSize: '30000'
 folder: /DC01_Local/vm/PZhukov/rancher
-hostsystem: /DC01_Local/host/Cluster/172.29.192.21
+hostsystem: /DC01_Local/host/Cluster/172.29.192.23
 memorySize: '8196'
 network:
   - /DC01_Local/network/DPG_Zhukov_TF_LAB_VLAN1301
