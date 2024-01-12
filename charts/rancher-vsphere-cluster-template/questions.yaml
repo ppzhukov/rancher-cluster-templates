@@ -22,3 +22,9 @@ questions:
   required: true
   label: "Worker Node count"
   group: "Nodepools"
+- variable: registry.privateRegistrySecret
+  description: "privateRegistrySecret for provisioning cluster"
+  label: "privateRegistrySecret Name"
+  type: privateregistrySsecret
+  group: "General"
+
