@@ -5,6 +5,17 @@ entries:
       catalog.cattle.io/namespace: fleet-default
       catalog.cattle.io/type: cluster-template
     apiVersion: v1
+    created: "2024-01-12T17:37:00.433705401Z"
+    description: RKE2 CPI Cluster template for vSphere
+    digest: abf7cc634699bba4b8556d262e9b458e9294eae431fdb07d5d3e0d1eb10aaaee
+    name: rancher-cpi-vsphere-cluster-template
+    urls:
+    - https://github.com/ppzhukov/rancher-cluster-templates/releases/download/rancher-cpi-vsphere-cluster-template-0.0.3/rancher-cpi-vsphere-cluster-template-0.0.3.tgz
+    version: 0.0.3
+  - annotations:
+      catalog.cattle.io/namespace: fleet-default
+      catalog.cattle.io/type: cluster-template
+    apiVersion: v1
     created: "2024-01-12T17:28:21.875329052Z"
     description: RKE2 CPI Cluster template for vSphere
     digest: f3d1c6a62a7eda413dc1b737607cbf6313c62c47007b9938c9a9b6f04d58b1fb
@@ -25,6 +36,17 @@ entries:
     - https://github.com/ppzhukov/rancher-cluster-templates/releases/download/rancher-do-cluster-template-0.0.1/rancher-do-cluster-template-0.0.1.tgz
     version: 0.0.1
   rancher-vsphere-cluster-template:
+  - annotations:
+      catalog.cattle.io/namespace: fleet-default
+      catalog.cattle.io/type: cluster-template
+    apiVersion: v1
+    created: "2024-01-12T17:37:00.634898026Z"
+    description: RKE2 Cluster template for vSphere
+    digest: 5bbcd960c6717bd104b3703252c5ddec03372955dfe903b4f42d776383f8816b
+    name: rancher-vsphere-cluster-template
+    urls:
+    - https://github.com/ppzhukov/rancher-cluster-templates/releases/download/rancher-vsphere-cluster-template-0.1.2/rancher-vsphere-cluster-template-0.1.2.tgz
+    version: 0.1.2
   - annotations:
       catalog.cattle.io/namespace: fleet-default
       catalog.cattle.io/type: cluster-template
@@ -124,4 +146,4 @@ entries:
     urls:
     - https://github.com/ppzhukov/rancher-cluster-templates/releases/download/rancher-vsphere-cluster-template-0.0.2/rancher-vsphere-cluster-template-0.0.2.tgz
     version: 0.0.2
-generated: "2024-01-12T17:28:22.049156018Z"
+generated: "2024-01-12T17:37:00.634952357Z"
