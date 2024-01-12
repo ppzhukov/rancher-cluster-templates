@@ -1,5 +1,5 @@
 cluster:
-  name: rke2-template-demo
+  name: rke2-cpi-template-demo
 
 cloudCredentialSecretName: ""
 
