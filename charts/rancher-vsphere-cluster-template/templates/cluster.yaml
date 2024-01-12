@@ -8,6 +8,9 @@ spec:
   cloudCredentialSecretName: {{ .Values.cloudCredentialSecretName }}
   {{- end }}
   kubernetesVersion: v1.24.17+rke2r1
+  clusterSecrets:
+    privateRegistrySecret: {{ .Values.privateRegistrySecret }}
+    privateRegistryURL: {{ .Values.privateRegistryURL }}
   rkeConfig:
     machinePools:
     - controlPlaneRole: true
