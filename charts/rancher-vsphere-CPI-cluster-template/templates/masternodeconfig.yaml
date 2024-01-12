@@ -55,7 +55,7 @@ cpuCount: '4'
 creationType: template
 customAttribute: []
 datacenter: /DC01_Local
-datastore: /DC01_Local/datastore/Storages/vhost01/vhost01_Datastore_02
+datastore: /DC01_Local/datastore/Storages/vhost03/vhost03_DS2
 datastoreCluster: ''
 diskSize: '30000'
 folder: /DC01_Local/vm/PZhukov/rancher
