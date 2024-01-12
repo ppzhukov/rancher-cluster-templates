@@ -1,6 +1,6 @@
 apiVersion: v1
-name: rancher-vsphere-cluster-template
-description: RKE2 Cluster template for vSphere
+name: rancher-cpi-vsphere-cluster-template
+description: RKE2 CPI Cluster template for vSphere
 version: 0.0.2
 annotations:
   catalog.cattle.io/type: cluster-template
