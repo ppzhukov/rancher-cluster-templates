@@ -25,6 +25,11 @@ questions:
 - variable: registry.privateRegistrySecret
   description: "privateRegistrySecret for provisioning cluster"
   label: "privateRegistrySecret Name"
-  type: privateregistrySsecret
+  type: enum
+  required: false
+  options:
+  - registryconfig-auth-rt5n2
+  - registryconfig-auth-nope1
+  - registryconfig-auth-nope2
   group: "General"
 
