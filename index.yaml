@@ -5,6 +5,18 @@ entries:
       catalog.cattle.io/namespace: fleet-default
       catalog.cattle.io/type: cluster-template
     apiVersion: v1
+    created: "2024-01-12T23:52:13.195281011Z"
+    description: RKE2 CPI Cluster template for vSphere
+    digest: a0372832d392e5a6e8767e8671867c032e369cbf1a150a26c1d0db74d9efc79b
+    icon: https://charts.rancher.io/assets/logos/vsphere-cpi.svg
+    name: rancher-cpi-vsphere-cluster-template
+    urls:
+    - https://github.com/ppzhukov/rancher-cluster-templates/releases/download/rancher-cpi-vsphere-cluster-template-0.0.5/rancher-cpi-vsphere-cluster-template-0.0.5.tgz
+    version: 0.0.5
+  - annotations:
+      catalog.cattle.io/namespace: fleet-default
+      catalog.cattle.io/type: cluster-template
+    apiVersion: v1
     created: "2024-01-12T17:47:28.692901497Z"
     description: RKE2 CPI Cluster template for vSphere
     digest: 335495f3d0e008130a6be559750921ff56a894798cdd076ff6bb11ca93ade9f9
@@ -47,6 +59,17 @@ entries:
     - https://github.com/ppzhukov/rancher-cluster-templates/releases/download/rancher-do-cluster-template-0.0.1/rancher-do-cluster-template-0.0.1.tgz
     version: 0.0.1
   rancher-vsphere-cluster-template:
+  - annotations:
+      catalog.cattle.io/namespace: fleet-default
+      catalog.cattle.io/type: cluster-template
+    apiVersion: v1
+    created: "2024-01-12T23:52:13.292563619Z"
+    description: RKE2 Cluster template for vSphere
+    digest: 5db6429609dbd7534c222dc1bdeb7c66907cc885623ecece346adcdc0c563210
+    name: rancher-vsphere-cluster-template
+    urls:
+    - https://github.com/ppzhukov/rancher-cluster-templates/releases/download/rancher-vsphere-cluster-template-0.1.4/rancher-vsphere-cluster-template-0.1.4.tgz
+    version: 0.1.4
   - annotations:
       catalog.cattle.io/namespace: fleet-default
       catalog.cattle.io/type: cluster-template
@@ -168,4 +191,4 @@ entries:
     urls:
     - https://github.com/ppzhukov/rancher-cluster-templates/releases/download/rancher-vsphere-cluster-template-0.0.2/rancher-vsphere-cluster-template-0.0.2.tgz
     version: 0.0.2
-generated: "2024-01-12T17:47:28.856240308Z"
+generated: "2024-01-12T23:52:13.292646352Z"
