@@ -16,7 +16,7 @@ spec:
           datacenters: DC01_Local
           host: 172.29.192.20
           password: {{ .Values.vCenter.password }}
-          username: {{ .Values.vCenter.user }}
+          username: {{ .Values.vCenter.username }}
       rancher-vsphere-csi:
         storageClass:
           datastoreURL: ds:///vmfs/volumes/5cbaab2e-f0847b38-f712-0cc47adc3c62/
@@ -24,7 +24,7 @@ spec:
           datacenters: DC01_Local
           host: 172.29.192.20
           password: {{ .Values.vCenter.password }}
-          username: {{ .Values.vCenter.user }}
+          username: {{ .Values.vCenter.username }}
     machineSelectorConfig:
       - config:
           cloud-provider-name: rancher-vsphere

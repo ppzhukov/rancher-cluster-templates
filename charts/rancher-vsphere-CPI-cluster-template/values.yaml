@@ -1,14 +1,14 @@
 cluster:
   name: rke2-cpi-template-demo
 
-cloudCredentialSecretName: ""
+cloudCredentialSecretName: "cattle-global-data:cc-jcvbb"
 
 nodepool:
   mastercount: 1
   workercount: 2
 
 registry:
-  privateRegistrySecret: ""
+  privateRegistrySecret: "registryconfig-auth-rt5n2"
   privateRegistryURL: "192.168.14.1.sslip.io:8443"
   
 vCenter:
