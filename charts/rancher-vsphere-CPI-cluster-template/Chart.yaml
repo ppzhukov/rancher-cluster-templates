@@ -2,7 +2,7 @@ apiVersion: v1
 name: rancher-cpi-vsphere-cluster-template
 description: RKE2 CPI Cluster template for vSphere
 icon: https://charts.rancher.io/assets/logos/vsphere-cpi.svg
-version: 0.0.7
+version: 0.0.8
 annotations:
   catalog.cattle.io/type: cluster-template
   catalog.cattle.io/namespace: fleet-default
