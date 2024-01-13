@@ -111,6 +111,17 @@ entries:
       catalog.cattle.io/namespace: fleet-default
       catalog.cattle.io/type: cluster-template
     apiVersion: v1
+    created: "2024-01-13T01:39:49.779082491Z"
+    description: RKE2 Cluster template for vSphere
+    digest: e84e69664346a9a3837f4877732957bb6b09a0d71922b845ef86624bcb5b534e
+    name: rancher-vsphere-cluster-template
+    urls:
+    - https://github.com/ppzhukov/rancher-cluster-templates/releases/download/rancher-vsphere-cluster-template-0.1.6/rancher-vsphere-cluster-template-0.1.6.tgz
+    version: 0.1.6
+  - annotations:
+      catalog.cattle.io/namespace: fleet-default
+      catalog.cattle.io/type: cluster-template
+    apiVersion: v1
     created: "2024-01-13T00:42:37.318032995Z"
     description: RKE2 Cluster template for vSphere
     digest: 83330a4a99cddf1697b09ab7eee75b19508847e31f46d868d323fb7228589e12
@@ -250,4 +261,4 @@ entries:
     urls:
     - https://github.com/ppzhukov/rancher-cluster-templates/releases/download/rancher-vsphere-cluster-template-0.0.2/rancher-vsphere-cluster-template-0.0.2.tgz
     version: 0.0.2
-generated: "2024-01-13T01:19:53.925496164Z"
+generated: "2024-01-13T01:39:49.779204899Z"
