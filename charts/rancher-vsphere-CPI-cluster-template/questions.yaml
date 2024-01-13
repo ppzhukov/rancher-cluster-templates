@@ -37,10 +37,10 @@ questions:
   description: Username for vCenter
   type: string
   required: true
-  group: Configuration
+  group: Configuration CPI vSphere
 - variable: vCenter.password
   label: Password
   description: Password for vCenter
   type: password
   required: true
-  group: Configuration
+  group: Configuration CPI vSphere
