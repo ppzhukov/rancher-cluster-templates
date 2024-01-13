@@ -5,6 +5,18 @@ entries:
       catalog.cattle.io/namespace: fleet-default
       catalog.cattle.io/type: cluster-template
     apiVersion: v1
+    created: "2024-01-13T01:19:53.925377332Z"
+    description: RKE2 CPI Cluster template for vSphere
+    digest: e8ed5c6b572ce67a33d30486cda5781e6fa30dff607b4d0d8198663a21cde34a
+    icon: https://charts.rancher.io/assets/logos/vsphere-cpi.svg
+    name: rancher-cpi-vsphere-cluster-template
+    urls:
+    - https://github.com/ppzhukov/rancher-cluster-templates/releases/download/rancher-cpi-vsphere-cluster-template-0.0.9/rancher-cpi-vsphere-cluster-template-0.0.9.tgz
+    version: 0.0.9
+  - annotations:
+      catalog.cattle.io/namespace: fleet-default
+      catalog.cattle.io/type: cluster-template
+    apiVersion: v1
     created: "2024-01-13T00:55:21.265305943Z"
     description: RKE2 CPI Cluster template for vSphere
     digest: 2133eea2f469be03f1e142b490be9f29b40f2aca2e15f1d3aa2d01e66823583b
@@ -238,4 +250,4 @@ entries:
     urls:
     - https://github.com/ppzhukov/rancher-cluster-templates/releases/download/rancher-vsphere-cluster-template-0.0.2/rancher-vsphere-cluster-template-0.0.2.tgz
     version: 0.0.2
-generated: "2024-01-13T00:55:21.265399037Z"
+generated: "2024-01-13T01:19:53.925496164Z"
