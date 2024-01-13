@@ -13,8 +13,6 @@ spec:
       rke2-calico: {}
       rancher-vsphere-cpi:
         vCenter:
-          credentialsSecret:
-            name: ''
           datacenters: DC01_Local
           host: 172.29.192.20
           password: vCenter.password
